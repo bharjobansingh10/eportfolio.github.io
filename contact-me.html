@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contact Me</title>
+<script src="https://kit.fontawesome.com/d3ce6b2135.js" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="assets/css/main.css">
+<link rel="icon" type="image/png" href="assets/img/favicon.png">
+
+</head>
+<body>
+
+<div class="topnav" id="myTopnav" role="navigation">
+  <a href="index.html">Home</a>
+  <a href="services.html" >Services</a>
+  <a href="portfolio.html" >Portfolio</a>
+  <a href="about-me.html" >About Me</a>
+  <a href="contact-me.html" class="active">Contact Me</a>
+  <a href="javascript:void(0);" class="icon" onclick="myMenu()" title="Menu">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+
+<!--CONTACT US SECTION-->
+<div class="main-section contact bg-lightgrey" role="main">
+  <div class="container">
+    <h1 class="heading-text">Get In Touch</h1>
+    <div class="width-100">
+      <form method="post" action="" onsubmit = "return(validate());" name="myForm">
+        <input type="text" placeholder="Full Name..." name="txt_name" id="txt_name"  onkeypress="return (event.charCode > 64 && event.charCode < 91  ) || (event.charCode > 96 && event.charCode < 123)  || (event.charCode==32)" >
+        <input type="email" placeholder="Email Id..." name="txt_email" id="txt_email"  pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
+        <input type="text" placeholder="Mobile No..." name="txt_mobile" id="txt_mobile"  onkeypress='return event.charCode >= 48 && event.charCode <= 57' minlength="10" maxlength="10">
+        <textarea placeholder="Comment Area..." name="txt_comment" id="txt_comment" ></textarea>
+        <button type="submit">Submit</button>
+        <button type="Reset">Reset</button>
+      </form>
+    </div>
+    <div class="width-50">
+      <h2>-<i class="fa fa-phone"></i>-</h2>
+      <h3>Phone</h3>
+      <p>+12049524203</p>
+    </div>
+    <div class="width-50">
+      <h2>-<i class="fa fa-envelope-o"></i>-</h2>
+      <h3>Email</h3>
+      <p>bharjobans4@gmail.com</p>
+    </div>
+  </div>
+</div>
+
+<!--FOOTER SECTION-->
+<div class="footer" role="contentinfo">
+  <div class="container">
+    <div class="footer-sect social-icon width-50">
+      <a href="#" title="facebook">
+        <i class="fa fa-facebook"></i>
+      </a>
+      <a href="#" title="twitter">
+        <i class="fa fa-twitter"></i>
+      </a>
+      <a href="#" title="Linkdin">
+        <i class="fa fa-linkedin"></i>
+      </a>
+      <a href="#" title="Instagram">
+        <i class="fa fa-instagram"></i>
+      </a>
+      <a href="#" title="GitHub">
+        <i class="fa fa-github"></i>
+      </a>
+    </div>
+    <div class="footer-sect mt-20 width-50">CopyRight © 2023. All Rights Reserved</div>
+  </div>
+</div>
+
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>
+
+
